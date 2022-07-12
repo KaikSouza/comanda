@@ -2,11 +2,14 @@
     border: none;
     background-color: #40454b;
 }
-.card-group{
-    border-radius: 10px;
-}
 .btn-login, .btn-login:hover{
     background-color: #651BE7;
     border-color: #651BE7;
     border-radius: 15px;
+}
+.navbar{
+    background-color: #651BE7;
+}
+.e-icone{
+    border-radius: 10px;
 }
