@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Comanda</title>
+    <title>E-Comanda - Painel de Controle</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="libs/sweetAlert/dist/sweetalert2.css">
     <link rel="stylesheet" href="libs/fontawesome/css/all.css">
     <link rel="stylesheet" href="libs/DataTables/datatables.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/E.png" type="image/x-icon">
 
 </head>
 <body class="bg-dark">
@@ -26,7 +27,7 @@
         <div id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i class="fa-solid fa-building"></i> Empresa</a>
+                    <a class="nav-link text-white" href="src/empresa/view/list-empresa.html"><i class="fa-solid fa-building"></i> Empresa</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#"><i class="fa-solid fa-clipboard-list"></i> Pedido</a>
@@ -38,20 +39,33 @@
                     <a class="nav-link text-white" href="#"><i class="fa-solid fa-brazilian-real-sign"></i> Venda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i class="fa-solid fa-users"></i> Cliente</a>
+                    <a class="nav-link text-white" href="src/cliente/view/list-cliente.html"><i class="fa-solid fa-users"></i> Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i class="fa-solid fa-cart-shopping"></i> Produtos</a>
+                    <a class="nav-link text-white" href="src/produto/view/list-produto.html"><i class="fa-solid fa-cart-shopping"></i> Produtos</a>
                 </li>
             </ul>
             <a class="text-white btn-logout"><i class="fa-solid fa-power-off"></i> Sair</a>
         </div>
     </nav>
 
+    <!-- Estrutura de atualização do conteúdo de acordo com o clique no menu-->
+
+    <div class="container mt-5" id="content">
+        <div class="row justify-content-center mt-10">
+            <div class="col-12">
+                <h1 class="text-center text-danger">
+                    Seja bem-vindo ao sistema de gerenciamento de comandas!
+                </h1>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="libs/sweetAlert/dist/sweetalert2.all.js"></script>
     <script src="libs/DataTables/datatables.js"></script>
+    <script src="js/menu.js"></script>
     
 </body>
 </html>

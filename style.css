@@ -2,7 +2,7 @@
     border: none;
     background-color: #40454b;
 }
-.btn-login, .btn-login:hover{
+.btn-login, .btn-login:hover, .btn-new, .btn-new:hover{
     background-color: #651BE7;
     border-color: #651BE7;
     border-radius: 15px;
@@ -12,4 +12,10 @@
 }
 .e-icone{
     border-radius: 10px;
+}
+thead{
+    background-color: #651BE7;
+}
+tbody{
+    background-color: #39009c;
 }
