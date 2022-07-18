@@ -5,10 +5,10 @@
 .btn-login, .btn-login:hover, .btn-new, .btn-new:hover, .btn-save, .btn-save:hover{
     background-color: #651BE7;
     border-color: #651BE7;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .btn-close, .btn-view, .btn-edit, .btn-delete{
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .navbar{
     background-color: #651BE7;
