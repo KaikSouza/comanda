@@ -20,7 +20,7 @@
         );
     }else{
         $dados = array(
-            'tipo' => 'success',
+            'tipo' => 'error',
             'mensagem' => 'Não foi possível encontrar a empresa selecionada!',
             'dados' => array()
         );

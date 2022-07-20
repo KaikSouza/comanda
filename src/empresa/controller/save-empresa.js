@@ -14,21 +14,10 @@ $(document).ready(function(){
             data: dados,
             url: 'src/empresa/model/save-empresa.php',
             success: function(dados){
-                const Toast = Swal.mixin({
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    timerProgressBar: true,
-                    didOpen: (toast) => {
-                      toast.addEventListener('mouseenter', Swal.stopTimer)
-                      toast.addEventListener('mouseleave', Swal.resumeTimer)
-                    }
-                  })
-                  
-                  Toast.fire({
+                  Swal.fire({
+                    title: dados.mensagem,
                     icon: dados.tipo,
-                    title: dados.mensagem
+                    confirmButtonText: 'Ok'
                   })
                   $('#modal-empresa').modal('hide')
                   $('#table-empresa').DataTable().ajax.reload()

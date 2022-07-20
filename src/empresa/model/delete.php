@@ -15,7 +15,7 @@
         );
     }else{
         $dados = array(
-            'tipo' => 'success',
+            'tipo' => 'error',
             'mensagem' => 'Não foi possível excluir a empresa!'
         );
     }
