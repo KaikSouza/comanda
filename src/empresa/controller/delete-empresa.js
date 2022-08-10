@@ -17,7 +17,7 @@ $(document).ready(function(){
                     type: 'POST',
                     dataType: 'json',
                     assync: true,
-                    data: dados,
+                    data: ID,
                     url: 'src/empresa/model/delete-empresa.php',
                     success: function(dados){
                           Swal.fire({
